@@ -249,6 +249,9 @@ export default function Hero() {
                 src="https://i.ibb.co/WBytNM1/transperent-bk-profile.png"
                 alt="transperent-bk-profile"
               /> */}
+
+              <img src="../assets/images/" />
+              <p>image </p>
             </m.div>
           </Center>
         </Grid.Col>
