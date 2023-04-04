@@ -244,11 +244,7 @@ export default function Hero() {
               className={classes.gradientBg}
             >
               {/* <HeroCanvas /> */}
-
-              {/* <img
-                src="https://i.ibb.co/WBytNM1/transperent-bk-profile.png"
-                alt="transperent-bk-profile"
-              /> */}
+              <img src="profile.JPG" alt="transperent-bk-profile" />
             </m.div>
           </Center>
         </Grid.Col>
