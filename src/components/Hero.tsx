@@ -244,7 +244,11 @@ export default function Hero() {
               className={classes.gradientBg}
             >
               {/* <HeroCanvas /> */}
-              <img src="./../assets/profile.JPG" alt="marina-nicolai" />
+
+              {/* <img
+                src="https://i.ibb.co/WBytNM1/transperent-bk-profile.png"
+                alt="transperent-bk-profile"
+              /> */}
             </m.div>
           </Center>
         </Grid.Col>

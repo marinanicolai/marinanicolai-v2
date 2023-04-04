@@ -22,12 +22,12 @@ export const aboutMe = {
     {
       id: 1,
       text: ` I'm Nicolai Marina, programmer from Montross, VA `,
-      icon: "🧔🏻",
+      icon: "👩",
     },
     {
       id: 2,
       text: " I will get my bachelor's degree in Computer Engineering in 2025 from George Mason. ",
-      icon: "🧑🏼‍🎓",
+      icon: "👩‍🎓",
     },
     {
       id: 3,
