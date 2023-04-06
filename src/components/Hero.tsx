@@ -17,13 +17,18 @@ import MotionContainer from "./animations/MotionContainer";
 import Type from "./animations/Type";
 import { varFade } from "./animations/variants";
 import getVariant from "./animations/variants/getVariant";
-import HeroCanvas from "./HeroCanvas";
+
 // utils
-import { backgroundGradient, textGradient } from "../utils/cssStyles";
+import {
+  backgroundGradient,
+  textGradient,
+  profileImg,
+} from "../utils/cssStyles";
 // icons
 import { Star } from "tabler-icons-react";
 // data
 import { metaData } from "../_mock/seo";
+import imgUrl from "/src/assets/profile2.png";
 
 // --------------------------------------------------
 
@@ -147,6 +152,10 @@ export default function Hero() {
     action: "Click",
   });
 
+  const imgStyle = {
+    width: "400px",
+  };
+
   return (
     <Group pr={10}>
       <Grid justify="space-between" align="center">
@@ -244,12 +253,7 @@ export default function Hero() {
               }}
               className={classes.gradientBg}
             >
-              {/* <HeroCanvas /> */}
-
-              {/* <img
-                src="https://i.ibb.co/WBytNM1/transperent-bk-profile.png"
-                alt="transperent-bk-profile"
-              /> */}
+              <img src={imgUrl} alt={`profile-img`} style={imgStyle} />
             </m.div>
           </Center>
         </Grid.Col>

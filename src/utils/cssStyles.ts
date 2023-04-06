@@ -13,3 +13,5 @@ export function backgroundGradient(value: string) {
     background: `-webkit-linear-gradient(${value})`,
   };
 }
+
+
