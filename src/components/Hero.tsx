@@ -185,6 +185,7 @@ export default function Hero() {
                 >
                   {metaData.fullName}
                 </m.h2>
+                <p>rebase</p>
               </m.div>
 
               <m.div variants={varFade().in}>
