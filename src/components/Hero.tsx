@@ -19,11 +19,7 @@ import { varFade } from "./animations/variants";
 import getVariant from "./animations/variants/getVariant";
 
 // utils
-import {
-  backgroundGradient,
-  textGradient,
-  profileImg,
-} from "../utils/cssStyles";
+import { backgroundGradient, textGradient } from "../utils/cssStyles";
 // icons
 import { Star } from "tabler-icons-react";
 // data
@@ -194,7 +190,6 @@ export default function Hero() {
                 >
                   {metaData.fullName}
                 </m.h2>
-                <p>rebase</p>
               </m.div>
 
               <m.div variants={varFade().in}>
