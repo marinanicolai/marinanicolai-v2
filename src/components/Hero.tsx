@@ -24,6 +24,8 @@ import { backgroundGradient, textGradient } from "../utils/cssStyles";
 import { Star } from "tabler-icons-react";
 // data
 import { metaData } from "../_mock/seo";
+//images
+import imgUrl from "/src/assets/profile2.png";
 
 // --------------------------------------------------
 
@@ -147,6 +149,10 @@ export default function Hero() {
     action: "Click",
   });
 
+  const imgStyle = {
+    width: "400px",
+  };
+
   return (
     <Group pr={10}>
       <Grid justify="space-between" align="center">
@@ -244,7 +250,7 @@ export default function Hero() {
               className={classes.gradientBg}
             >
               {/* <HeroCanvas /> */}
-              <img src="profile.JPG" alt="transperent-bk-profile" />
+              <img src={imgUrl} alt={`profile-img`} style={imgStyle} />
             </m.div>
           </Center>
         </Grid.Col>
