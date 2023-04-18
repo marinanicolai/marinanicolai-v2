@@ -8,6 +8,7 @@ import {
   Group,
   ThemeIcon,
   Title,
+  MediaQuery,
 } from "@mantine/core";
 import { m } from "framer-motion";
 // hooks
@@ -250,7 +251,9 @@ export default function Hero() {
               className={classes.gradientBg}
             >
               {/* <HeroCanvas /> */}
-              <img src={imgUrl} alt={`profile-img`} style={imgStyle} />
+              <MediaQuery smallerThan="sm" styles={{ display: "none" }}>
+                <img src={imgUrl} alt={`profile-img`} style={imgStyle} />
+              </MediaQuery>
             </m.div>
           </Center>
         </Grid.Col>
