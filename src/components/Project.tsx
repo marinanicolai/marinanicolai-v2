@@ -6,6 +6,7 @@ import BoxWrapper from "./BoxWrapper";
 // d_mock
 import github from "../_mock/github.json";
 import RepositoryCard from "./RepositoryCard";
+import Card from "./Card";
 
 // ----------------------------------------------------------------------------
 
@@ -25,11 +26,12 @@ export default function Github() {
   useEffect(() => {
     fetchData();
   }, []);
-
+  console.log(repos);
   return (
-    <Container px="xl" size="lg">
+    <Container>
       <BoxWrapper withBackground={false}>
-        <Title
+        <Grid>
+          {/* <Title
           order={1}
           sx={(theme) => ({
             marginBottom: 25,
@@ -61,6 +63,46 @@ export default function Github() {
                   <Skeleton height={150} sx={{ minWidth: 175 }} radius="xl" />
                 </Grid.Col>
               ))}
+        </Grid>
+        <Grid>
+          <Grid.Col sm={12} md={6} lg={4}>
+            <RepositoryCard
+              title={"live"}
+              description={"gooogle"}
+              url={"https:www.google.com"}
+              stargazers_count={0}
+              forks_count={0}
+              language={"REact.js"}
+              created_at={""}
+            />
+          </Grid.Col> */}
+
+          <Grid.Col sm={12} md={12} lg={12}>
+            <Card
+              title={"Photo App"}
+              description={
+                "Created an app that utilizes REST API to display brief information on various pictures in a card style on the homepage. Users can search for pictures based on text. Each card is clickable and will redirect the user to the corresponding image page, where they can access more detailed information"
+              }
+              url={"https://unsplash-marinanicolai.vercel.app/"}
+              stargazers_count={0}
+              forks_count={0}
+              language1={"React.js"}
+              created_at={""}
+            />
+          </Grid.Col>
+          <Grid.Col sm={12} md={12} lg={12}>
+            <Card
+              title={"Crypto App"}
+              description={
+                "Created an app that utilizes REST API to display brief information on various cryptos in a list style on the homepage. "
+              }
+              url={"https://nicolai-crypto.netlify.app/"}
+              stargazers_count={0}
+              forks_count={0}
+              language1={"React.js"}
+              created_at={""}
+            />
+          </Grid.Col>
         </Grid>
       </BoxWrapper>
     </Container>

@@ -251,9 +251,9 @@ export default function Hero() {
               className={classes.gradientBg}
             >
               {/* <HeroCanvas /> */}
-              {/* <MediaQuery smallerThan="sm" styles={{ display: "none" }}>
+              <MediaQuery smallerThan="sm" styles={{ display: "none" }}>
                 <img src={imgUrl} alt={`profile-img`} style={imgStyle} />
-              </MediaQuery> */}
+              </MediaQuery>
             </m.div>
           </Center>
         </Grid.Col>
